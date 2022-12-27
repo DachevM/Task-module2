@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Блок 1</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(39, 49, 95);
+      }
+      .block {
+        margin: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        height: 50%;
+
+        text-align: center;
+        line-height: 60%;
+      }
+      .dom1 {
+        width: 30%;
+        height: 50%;
+        border-right: 2px solid black;
+        background-color: white;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+      }
+      .dom2 {
+        width: 30%;
+        height: 50%;
+
+        background-color: white;
+      }
+      .dom3 {
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+        width: 30%;
+        height: 50%;
+        background-color: white;
+        border-left: 2px solid black;
+      }
+      img {
+        width: 40%;
+        height: 40%;
+      }
+      h4 {
+        color: orangered;
+      }
+      button {
+        background-color: orangered;
+        color: white;
+        width: 50%;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <div class="dom1">
+        <img src="host1.png" alt="" />
+        <h4>Виртуальный хостинг</h4>
+        <p>3.95$ в месяц</p>
+        <a href=""><button>Подробнее</button></a>
+      </div>
+      <div class="dom2">
+        <img src="oblach.png" alt="" />
+        <h4>Облачный хостинг</h4>
+        <p>217.95$ в месяц</p>
+        <a href=""><button>Подробнее</button></a>
+      </div>
+      <div class="dom3">
+        <img src="server.jpeg" alt="" />
+        <h4>Выделенный сервер</h4>
+        <p>68.95$ в месяц</p>
+        <a href=""><button>Подробнее</button></a>
+      </div>
+    </div>
+  </body>
+</html>
