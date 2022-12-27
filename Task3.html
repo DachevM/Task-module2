@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      .block {
+        position: relative;
+      }
+      .over {
+        background-color: green;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background: linear-gradient(to right, green 70%, rgb(123, 255, 47) 0%);
+      }
+      .under {
+        margin: 50px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        border-radius: 50%;
+        text-align: center;
+        color: black;
+        background-color: greenyellow;
+      }
+      p {
+        margin: 50px;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <div class="over">
+        <div class="under"><p>75</p></div>
+      </div>
+    </div>
+  </body>
+</html>
