@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      .block {
+        display: inline-flex;
+        top: 150px;
+        position: relative;
+        transition: margin-left 2s;
+        margin-left: -510px;
+      }
+      .left {
+        background: black;
+        color: white;
+        width: 500px;
+        height: 170px;
+        text-align: center;
+      }
+      img {
+        width: 40%;
+        height: 100%;
+        float: left;
+      }
+      .txt {
+        margin-top: 40px;
+      }
+      .right {
+        background: orange;
+        color: black;
+        width: 60px;
+        height: 170px;
+        text-align: center;
+        line-height: 70px;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        border-bottom-left-radius: 15%;
+        border-top-left-radius: 15%;
+      }
+
+      .block:hover {
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">
+      <div class="left">
+        <img src="women.jpg" />
+        <div class="txt">
+          Если у вас возникли вопросы по коду, звоните по этому телефону:
+          555-3298. Звонок платный.
+        </div>
+      </div>
+      <div class="right">Обратная связь</div>
+    </div>
+  </body>
+</html>
