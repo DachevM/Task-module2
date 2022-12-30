@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  height: auto;
+  margin: 0;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+}
+.head {
+  display: block;
+  background-image: none;
+  height: 80px;
+}
+.head img {
+  display: block;
+  width: 64px;
+  height: 32px;
+  margin-left: 30%;
+}
+.maket {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: #111111;
+  background-color: #e5e5e5;
+
+  width: 100%;
+}
+.block {
+  min-height: 1009px;
+
+  display: flex;
+  flex-direction: column;
+  width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-size: 3.75rem;
+  margin: 57px auto 0;
+  font-family: Oswald, sans-serif !important;
+  font-weight: 400;
+  color: #f12c0e;
+  word-wrap: break-word;
+  position: relative;
+  display: table;
+}
+.top-txt {
+  width: 793px;
+  font-style: italic;
+  margin: 20px auto 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  word-wrap: break-word;
+  position: relative;
+  margin: auto;
+}
+.menu-list {
+  min-height: 618px;
+  grid-template-columns: repeat(2, calc(((100% - 1140px) / 2) + 555px));
+  grid-template-rows: repeat(2, auto);
+  width: 1140px;
+  grid-gap: 30px;
+  margin: 20px 0 0;
+  display: grid;
+  position: relative;
+}
+.menu-list img {
+  width: 300px;
+  height: 249px;
+  margin: 0 auto 0 0;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.menu-list h3 {
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  margin: 20px 0 0;
+  padding: 0;
+  font-family: Oswald, sans-serif;
+}
+.desc1,
+.desc2,
+.desc3,
+.desc4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: italic;
+  margin: 20px 0 0 auto;
+  position: relative;
+
+  text-align: left;
+}
+.menu-list h6 {
+  color: #f12c0e;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 20px 0 0;
+}
+.menu-list button {
+  align-self: flex-start;
+  text-align: center;
+  padding: 10px 30px;
+  white-space: nowrap;
+  border: 0 none transparent;
+  display: table;
+  cursor: pointer;
+  background-color: #cecece;
+  margin-top: 10%;
+}
+.menu-list a {
+  text-decoration: none;
+  border-style: none;
+  text-transform: uppercase;
+  background-image: none;
+  font-size: 0.875rem;
+  margin: 20px 0 0;
+  color: #111111;
+  background-color: #cecece;
+}
+.orginal,
+.salami,
+.chicken,
+.hawai {
+  padding: 30px 0 30px 30px;
+  justify-content: flex-start;
+  background-color: white;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+}
+.description1,
+.description2,
+.description3,
+.description4 {
+  width: 270px;
+  padding: 0 25px;
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+}
+.image-from {
+  letter-spacing: 1px;
+  margin: 30px auto 60px;
+  text-align: center;
+  position: relative;
+  display: table;
+  padding: 0;
+}
+.image-from a {
+  color: #d94c0e;
+  text-decoration: none;
+}
+.foot {
+  color: #ffffff;
+  background-color: #333333;
+  position: relative;
+  height: 174px;
+  display: block;
+}
+.foot p {
+  margin: 49px auto;
+  border: 2px solid transparent;
+  margin-top: 0;
+  text-align: center;
+  width: 417px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 1199px) {
+  .block {
+    width: 1140px;
+    min-height: 1009px;
+  }
+  .menu-list img {
+    width: 29%;
+  }
+}
+@media (max-width: 991px) {
+  .block {
+    width: 940px;
+  }
+  .menu-list {
+    grid-template-columns: 100%;
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .block {
+    min-height: 670px;
+    width: 720px;
+  }
+  .menu-list {
+    grid-template-columns: 100%;
+    width: 70%;
+  }
+  .menu-list img {
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    margin-left: 25%;
+  }
+  .top-txt {
+    margin-left: 0;
+    margin-right: 0;
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  .menu-list {
+    width: 48%;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin-left: 15%;
+  }
+  .top-txt {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+  }
+  .orginal,
+  .salami,
+  .chicken,
+  .hawai {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
