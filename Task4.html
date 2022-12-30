@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Макет 4</title>
+    <title>Блок 4</title>
     <style>
       * {
         margin: 0;
@@ -10,10 +10,13 @@
         width: 100%;
         height: 100%;
       }
-      div {
+
+      .block {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        width: 50%;
+        height: 30%;
+        margin: 20%;
       }
       .a:hover,
       .b:hover,
@@ -23,23 +26,48 @@
       .a,
       .b,
       .c {
-        width: 30%;
-        height: 50%;
-        margin: 10px;
+        margin: 0.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
-
+      .top1,
+      .top2,
+      .top3 {
+        height: 20%;
+        background-color: turquoise;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+      }
       img {
-        display: block;
         width: 100%;
-        height: 100%;
+        height: 200%;
+      }
+      p {
+        text-align: center;
+        font-size: 3.5rem;
       }
     </style>
   </head>
   <body>
     <div class="block">
-      <div class="a"><img src="1.png" /></div>
-      <div class="b"><img src="2.png" /></div>
-      <div class="c"><img src="3.png" /></div>
+      <div class="a">
+        <div class="top1">31.08</div>
+        <img src="1.png" />
+        <p>+20°</p>
+      </div>
+      <div class="b">
+        <div class="top2">01.09</div>
+        <img src="2.png" />
+        <p>-3°</p>
+      </div>
+      <div class="c">
+        <div class="top3">02.09</div>
+        <img src="3.png" />
+        <p>-10°</p>
+      </div>
     </div>
   </body>
 </html>
+
