@@ -204,6 +204,9 @@ h1 {
     grid-template-columns: 100%;
     width: 100%;
   }
+  .menu-list img {
+    width: 44%;
+  }
 }
 @media (max-width: 767px) {
   .block {
