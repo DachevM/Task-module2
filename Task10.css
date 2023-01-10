@@ -207,6 +207,9 @@ h1 {
   .menu-list img {
     width: 44%;
   }
+  .top-txt {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .block {
