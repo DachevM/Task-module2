@@ -13,17 +13,19 @@
       .block {
         margin: 20%;
         display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        height: 50%;
+
+        width: 50%;
+        height: 25%;
         text-align: center;
-        line-height: 60%;
+        word-wrap: break-word;
         position: relative;
+        font-size: 0.9vw;
       }
 
       .dom1 {
+        display: block;
         width: 30%;
-        height: 50%;
+        height: 100%;
         background-color: white;
         border-top-left-radius: 5%;
         border-bottom-left-radius: 5%;
@@ -39,14 +41,14 @@
       }
       .dom2 {
         width: 30%;
-        height: 50%;
+        height: 100%;
         background-color: white;
       }
       .dom3 {
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
         width: 30%;
-        height: 50%;
+        height: 100%;
         background-color: white;
       }
       .dom3::before {
@@ -65,8 +67,11 @@
       }
 
       h4 {
-        color: #ff8560;
-        font-size: 1.3rem;
+        color: #fa754c;
+        font-size: 3vh;
+        font-size: 1.25vw;
+        margin-top: 5%;
+        width: 100%;
       }
       a {
         text-decoration: none;
@@ -74,13 +79,20 @@
       }
       button {
         text-align: center;
-
-        background-color: #ff8560;
-        border-color: #ff8560;
+        word-wrap: normal;
+        background-color: #fa754c;
+        border-color: #fa754c;
         color: white;
-        width: 40%;
-        height: 15%;
+        width: 5.5vw;
+        height: 3vh;
         border-radius: 5%;
+      }
+      p {
+        font-size: 1vw;
+      }
+      .txt {
+        margin-top: 2%;
+        font-size: 0.8vw;
       }
     </style>
   </head>
@@ -92,7 +104,11 @@
           <h4>Виртуальный хостинг</h4>
           <p>3.95$ в месяц</p>
         </div>
-        <button><a href="">Подробнее</a></button>
+        <footer class="foot3">
+          <button>
+            <a href=""><p class="txt">Подробнее</p></a>
+          </button>
+        </footer>
       </div>
 
       <div class="dom2">
@@ -101,7 +117,11 @@
           <h4>Облачный хостинг</h4>
           <p>68.95$ в месяц</p>
         </div>
-        <button><a href="">Подробнее</a></button>
+        <footer class="foot3">
+          <button>
+            <a href=""><p class="txt">Подробнее</p></a>
+          </button>
+        </footer>
       </div>
       <div class="dom3">
         <img src="server1.png" alt="" />
@@ -109,9 +129,12 @@
           <h4>Выделенный сервер</h4>
           <p>217.95$ в месяц</p>
         </div>
-        <button><a href="">Подробнее</a></button>
+        <footer class="foot3">
+          <button>
+            <a href=""><p class="txt">Подробнее</p></a>
+          </button>
+        </footer>
       </div>
     </div>
   </body>
 </html>
-
